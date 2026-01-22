@@ -31,6 +31,12 @@ public class Song{
       * song easily as well!
       * What kind of mutator (setter) methods will you need?
       */
-    
+    public void likeSong(){
+        isLiked = true;
+    }
+
+    public void dislikeSong(){
+        isLiked = false;
+    }
 
 }

@@ -35,7 +35,19 @@ public class Playlist {
         playList.add(songIn);
     }
 
-    public void likeSong(int position){
-        playList.get(position);
+    public void likeSongPlaylist(int position){
+        playList.get(position).likeSong();
+    }
+
+    public void removeSong(int position){
+        playList.remove(position);
+    }
+
+    public void printPlaylist(){
+        for(Song a : playList){
+            System.out.println("Song name: " + a.getName());
+            System.out.println("Artist: " + a.getArtist());
+            System.out.println(a.get);
+        }
     }
 }
