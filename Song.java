@@ -57,7 +57,23 @@ public class Song{
     }
      
     public void dislikeSong(){
-        isLiked = false;
+         isLiked = false;
+    }
+
+    public String toString(){
+         if(isLiked){
+            return "Song name: " + name + "\n" + 
+            "Artist: " + artist + "\n" + 
+            "Song length: " + (length / 60) + ":" + (length % 60) + "\n" + 
+            "Song is liked";
+         }
+         else{
+            return "Song name: " + name + "\n" + 
+            "Artist: " + artist + "\n" + 
+            "Song length: " + (length / 60) + ":" + (length % 60) + "\n" + 
+            "Song is not liked";
+         }
+
     }
 
 }
