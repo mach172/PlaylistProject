@@ -20,6 +20,7 @@ public class Song{
         name = myName;
         artist = myArtist;
         length = myLength;
+        isLiked = myIsLiked;
     }
 
 
