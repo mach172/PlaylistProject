@@ -45,15 +45,7 @@ public class Playlist {
 
     public void printPlaylist(){
         for(Song a : playList){
-            System.out.println("Song name: " + a.getName());
-            System.out.println("Artist: " + a.getArtist());
-            System.out.println("Song length: " + a.time());
-            if(a.getLiked()){
-                System.out.println("Song is liked");
-            }
-            else{
-                System.out.println("Song is not liked");
-            }
+            a.toString();
         }
     }
 }
