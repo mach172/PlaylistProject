@@ -3,10 +3,13 @@
  * @author
  * @version
  */
-public class Song {
+public class Song{
     //Fields-- what information do we want each Song to store?
-
-
+    private String name;
+    private String artist;
+    private double length;
+    private boolean isLiked;
+}
 
 
     /**
@@ -14,6 +17,10 @@ public class Song {
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
 
+    public Song(String myName, String myArtist, double myLength, boolean myIsLiked){
+        name = myName;
+        artist = myArtist;
+        length = myLength;
 
 
 
