@@ -44,6 +44,10 @@ public class Song{
         return length;
      }
 
+    private void simplify(){
+
+    }
+
      public boolean getLiked(){
         return isLiked;
      }
@@ -51,7 +55,7 @@ public class Song{
      public void likeSong(){
         isLiked = true;
     }
-
+     
     public void dislikeSong(){
         isLiked = false;
     }
