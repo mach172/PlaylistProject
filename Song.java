@@ -10,7 +10,7 @@ public class Song{
     private int length;
     private boolean isLiked;
 
-    
+
     /**
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
