@@ -44,8 +44,8 @@ public class Song{
         return length;
      }
 
-    private void simplify(){
-
+    public String time(){
+         return (length / 60) + ":" + (length % 60);
     }
 
      public boolean getLiked(){
