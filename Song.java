@@ -65,13 +65,13 @@ public class Song{
             return "Song name: " + name + "\n" + 
             "Artist: " + artist + "\n" + 
             "Song length: " + (length / 60) + ":" + (length % 60) + "\n" + 
-            "Song is liked";
+            "Song is liked" + "\n";
          }
          else{
             return "Song name: " + name + "\n" + 
             "Artist: " + artist + "\n" + 
             "Song length: " + (length / 60) + ":" + (length % 60) + "\n" + 
-            "Song is not liked";
+            "Song is not liked" + "\n";
          }
 
     }

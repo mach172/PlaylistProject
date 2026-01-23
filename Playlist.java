@@ -39,13 +39,42 @@ public class Playlist {
         playList.get(position).likeSong();
     }
 
-    public void removeSong(int position){
+    public void removeSongPosition(int position){
         playList.remove(position);
+    }
+
+    public void removeSongSong(Song a){
+        playList.remove(a);
     }
 
     public void printPlaylist(){
         for(Song a : playList){
             a.toString();
+        }
+    }
+
+    public void printLikedSongs(){
+        for(Song a : playList){
+            if(a.getLiked()){
+                System.out.println(a.toString());
+            }
+        }
+    }
+
+    public String totalDuration(){
+        int duration = 0;
+        for(Song a : playList){
+            duration += a.getLength();
+        }
+
+        return (duration / 60) + ":" + (duration % 60);
+    }
+
+    public void removeDislikedSongs(){
+        for(int i = playList.size()-1; i >= 0; i--){
+            if(!(playList.get(i).getLiked())){
+                playList.remove(i);
+            }
         }
     }
 }
