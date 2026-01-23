@@ -49,11 +49,12 @@ public class Playlist {
 
     public void printPlaylist(){
         for(Song a : playList){
-            a.toString();
+            System.out.println(a.toString());
         }
     }
 
     public void printLikedSongs(){
+        System.out.println("Liked songs: ");
         for(Song a : playList){
             if(a.getLiked()){
                 System.out.println(a.toString());
