@@ -11,6 +11,8 @@ public class PlaylistTester {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
 
+        Playlist realmusic = new Playlist();
+
         System.out.println("Adding songs to the Playlist...\n");
         /**
          * Add some songs here. Note that the format for adding a Song to a Playlist p
@@ -18,6 +20,7 @@ public class PlaylistTester {
          * p.addSong(new Song(..., ..., ...))
          */
 
+        Song spaceOddity  = new Song("Space Oddity", "David Bowie", 318,false);
 
 
         System.out.println("Printing the songs...\n");
