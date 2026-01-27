@@ -68,7 +68,12 @@ public class Playlist {
             duration += a.getLength();
         }
 
-        return (duration / 60) + ":" + (duration % 60);
+        if((duration % 60) < 10){
+            return (duration / 60) + ":" + "0" + (duration % 60);
+        }
+        else{
+            return (duration / 60) + ":" + (duration % 60);
+        }
     }
 
     public void removeDislikedSongs(){
